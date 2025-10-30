@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./todolist.css">
+    <style>
+          body{
+          background: #2A7B9B;
+          background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 76%, rgba(237, 221, 83, 1) 100%);
+        }
+        .container-color{
+          background: #2A7B9B;
+          background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 76%, rgba(237, 221, 83, 1) 100%);
+        }
+        .styling{
+            text-align: center;
+            font-size: 50px;
+            font-family:"Dancing Script", cursive;
+        }
+        .todo-input-grid , .js-todo-list{
+            margin-left: 40%;
+        }
+       
+
+    </style>
+  </head>
+  <body>
+    <p class="styling">Todo List</p>
+    <div class="todo-input-grid">
+      <input placeholder="To be done"
+        class="js-name-input name-input">
+      <input type="date"
+        class="js-due-date-input due-date-input">
+      <button onclick="
+        addTodo();
+      " class="add-todo-button">Add</button>
+    </div>
+
+    <div class="js-todo-list todo-grid"></div>
+
+    <script src="./todolist.js"></script>
+  </body>
+</html>
